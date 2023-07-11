@@ -6,14 +6,13 @@ import reportWebVitals from "./reportWebVitals";
 import { data } from "./data";
 
 // temporary to eventually allow the user to select which column to use
-const HEADERS = Object.keys(data[0]);
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <Table headers={HEADERS} tableData={data} />
+    <Table headers={Object.keys(data[0])} tableData={data} />
   </React.StrictMode>
 );
 

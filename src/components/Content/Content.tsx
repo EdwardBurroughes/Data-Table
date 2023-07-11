@@ -19,7 +19,7 @@ export function Content({ entries }: ContentProps) {
   return (
     <tbody>
       {entries.map((entry) => (
-        <ObjectRow obj={entry} />
+        <ObjectRow rowObj={entry} />
       ))}
     </tbody>
   );
